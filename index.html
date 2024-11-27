@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myBlog Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="log-in">
+        <h2>Log In</h2>
+        <input type="text" id="email" placeholder="Enter Email" autocomplete="off">
+        <input type="text" id="password" placeholder="Enter your password" autocomplete="off">
+       <button type="button" id="login">Login</button>
+    </div>
+    
+    <!-- My blog area -->
+    <div class="myblog">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="blog.html">Home</a></li>
+                    <li><a href="blog.html">Students</a></li>
+                    <li><a href="index.html" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="notify"></div>
+        <div class="container-main">
+            <div class="main-content">
+                    <!-- Post form -->
+                    <div class="post-form">
+                        <label>Student Name</label>
+                        <input type="text" id="title" class="title" placeholder="Enter Student Name">
+                        <label>Student Data</label>
+                        <textarea name="" id="student_info" class="student_info" placeholder="Enter Student Details here" cols="30" rows="10"></textarea>
+                        <button id="post-btn" class="post-btn">Publish now</button>
+                        <button id="update_btn" class="update_btn">Update now</button>
+                    </div>
+                    <!-- Table -->
+                    <div class="my-content">
+                        <h2>Students</h2>
+                        <table></table>
+                    </div>
+                </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>Copyright text reserved. Zuhaib Ahmed</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+ body{
+    counter-reset: section;
+ }
+
+/* Signup */
+#signup {
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+#signup h1{
+    text-align: end;
+    padding: 5px;
+}
+
+#signup input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #111;
+      outline: none;
+      width: 100%;
+}
+
+#signup button {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #111;
+    border: 1px solig #111;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+#signup button:hover {
+    background-color: transparent;
+    color: #111;
+}
+
+
+/* Login */
+.log-in {
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.log-in h1{
+    text-align: end;
+    padding: 5px;
+}
+
+.log-in input {
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #111;
+      outline: none;
+      width: 100%;
+}
+
+.log-in button {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #111;
+    border: 1px solig #111;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+.log-in button:hover {
+    background-color: transparent;
+    color: #111;
+}
+
+
+
+/* Header */
+header {
+    background-color: #111;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: rgb(180, 215, 238);
+    transition: 0.3s ease-in-out ;
+}
+header nav ul {
+    color: white;
+}
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+a
+header ul li{
+    color: white;
+
+}
+
+.notify {
+    background: green;
+    color: white;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+.main-content .post-form {
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: rgba(red, green, blue, 0.16) 0px 1px 4px;
+    padding: 30px;
+}
+
+.main-content .post-form input , textarea {
+    width: 100%;
+    border: 1px solid;
+    padding: 5px 0;
+    border: 1px solid #111;
+    margin: 20px 0;
+}
+
+.main-content .post-form button{
+    width: 100%;
+    background-color: #111;
+    color: white;
+    padding: 5px 0;
+    border: 1px solid #111;
+    transition: 0.5s ease-out;
+}
+
+.main-content .post-form button:hover {
+    background-color: transparent;
+}
+
+/* update btn */
+
+.myblog {
+    display: none;
+}
+   
+.update_btn {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.my-content {
+    width: 100%;
+    padding: 70px 50px;
+}
+.my-content table {
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: rgba(0,0,0, 0.16) 0px 1px 4px;
+    padding: 30px;
+}
+.my-content table tr {
+    margin: 30px 0;
+    width: 100%;
+}
+.my-content table tr button {
+    padding: 5px 10px;
+    border: 1px solid #111;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.my-content table tr button.delete {
+    background: rgb(106, 8, 8);
+    color: white;
+}
+.my-content table tr button.update {
+    background: rgb(8, 67, 106);
+    color: white;
+}
+.my-content table tr button:hover {
+    background: transparent;
+    color: #111;
+}
+
+/* Post id */
+
+.postNumber {
+    height: 20px;
+    display: inline-block;
+    width: 20px;
+    color: #000;
+}
+.postNumber::hover {
+    counter-increment: section;
+    content: counter(section);
+}
+.footer {
+    /* width: 100%;
+    height: 70px;
+    line-height: 70px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: fff;
+    background: #111;
+    text-align: center;
+    color: white;
+    container: justify;
+}
+.main {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.post {
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 16) 0px 1px 4px;
+    padding: 20px;
+}
+.post:h2 {
+    padding: 10px 0;
+}
+
+/* Student heading on single student page */
+.student {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Form input area */
+#title {
+    padding: 10px;
+}
+#student_info {
+    padding: 10px;
+}
